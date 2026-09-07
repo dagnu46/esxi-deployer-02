@@ -1,2 +1,11 @@
-version: "3.9"
-services: {}
+services:
+  frontend:
+    image: esxi-frontend:latest
+  api:
+    image: esxi-api:latest
+  deployer:
+    image: esxi-deployer:latest
+  db:
+    image: postgres:17
+  nginx:
+    image: nginx:alpine
